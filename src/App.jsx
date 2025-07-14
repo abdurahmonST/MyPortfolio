@@ -1,10 +1,14 @@
-import { useState } from 'react'
-import './App.css'
+import { Route, Routes } from 'react-router'
+import { MainLayout } from './layout'
+import { HomePage } from './pages'
 
 function App() {
   return (
-    <>
-    </>
+    <MainLayout>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+      </Routes>
+    </MainLayout>
   )
 }
 
