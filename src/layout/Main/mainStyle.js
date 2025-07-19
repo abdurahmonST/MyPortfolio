@@ -7,4 +7,6 @@ export const MainWrapper = styled.div`
     justify-content: space-between;
 `;
 
-export const TopContentWrapper = styled.div``;
+export const TopContentWrapper = styled.div`
+
+`;

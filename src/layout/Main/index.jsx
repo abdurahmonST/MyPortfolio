@@ -1,12 +1,13 @@
-import { MainWrapper } from './mainStyle'
+import Navbar from "../Navbar";
+import { MainWrapper } from "./mainStyle";
 
 const MainLayout = (props) => {
   return (
     <MainWrapper>
-        
-        {props.children}
+      <Navbar />
+      {props.children}
     </MainWrapper>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;

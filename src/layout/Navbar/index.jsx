@@ -1,21 +1,43 @@
-import React from 'react'
-import { NavbarWrapper } from './navbarStyle'
-import { NavLink } from 'react-router'
+import React from "react";
+import {
+  LogoWrapper,
+  NavbarAction,
+  NavbarSections,
+  NavbarWrapper,
+} from "./navbarStyle";
+import { NavLink } from "react-router";
+import { GlobalStyle } from "../../styles/GlobalStyle";
 
-const NavbarLayout = () => {
+const Navbar = () => {
   return (
     <NavbarWrapper>
+      <GlobalStyle />
       <LogoWrapper>
-        <h2>Abdurahmon</h2>
+        <p>
+          Abdurahmon
+          <br />
+          Bekmirzayev
+        </p>
       </LogoWrapper>
-      <Sections>
-        <NavLink to='./home' >Home</NavLink>
-        <NavLink to='./about' >About</NavLink>
-        <NavLink to='./projects' >Projects</NavLink>
-        <NavLink to='./contact' >Contact</NavLink>
-      </Sections>
+      <NavbarSections>
+        <NavLink className="linkStyle" to="./home">
+          Home
+        </NavLink>
+        <NavLink className="linkStyle" to="./about">
+          About
+        </NavLink>
+        <NavLink className="linkStyle" to="./projects">
+          Projects
+        </NavLink>
+        <NavLink className="linkStyle" to="./contact">
+          Contact
+        </NavLink>
+        <NavbarAction>
+          <button>Resume</button>
+        </NavbarAction>
+      </NavbarSections>
     </NavbarWrapper>
-  )
-}
+  );
+};
 
-export default NavbarLayout
+export default Navbar;

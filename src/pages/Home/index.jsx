@@ -1,16 +1,12 @@
-import React from 'react'
-import { HomeWrapper } from './homeStyles'
-import { Button } from '../../components'
+import React from "react";
+import { HomeWrapper } from "./homeStyles";
 
 const HomePage = () => {
   return (
     <HomeWrapper>
-      <h1>Hello</h1>
-      <Button type='button'>button 1</Button>
-      <Button type='button2'>button 2</Button>
-      <Button type='button3'>Hover me</Button>
+      <h1>This is Home Page</h1>
     </HomeWrapper>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
