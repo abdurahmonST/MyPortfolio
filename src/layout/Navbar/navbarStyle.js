@@ -13,8 +13,8 @@ export const LogoWrapper = styled.div`
   line-height: 1;
   font-size: 26px;
   font-weight: 700; 
-  width: 50%;
   cursor: pointer;
+  width: 50%;
 `;
 
 export const NavbarSections = styled.div`
@@ -27,6 +27,12 @@ export const NavbarSections = styled.div`
     text-decoration: none;
     color: #000000;
     font-weight: 100;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+      border-bottom: 1px solid #000000;
+    }
   }
 `;
 
@@ -40,5 +46,12 @@ export const NavbarAction = styled.div`
         border: 2px solid black;
         cursor: pointer;
         font-weight: 100;
+        transition: all 0.3s ease-in-out ;
+
+        &:hover{
+          background-color: #000000;
+          color: #ffffff;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        }
     }
 `

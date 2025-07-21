@@ -32,6 +32,14 @@ export const GlobalStyle = createGlobalStyle`
     font-style: inherit;
     font-display: swap;
   }
+
+  @font-face {
+    font-family: 'Outfit';
+    src: url('fonts/Outfit/static/Outfit-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: inherit;
+    font-display: swap;
+  }
 `;
 
  

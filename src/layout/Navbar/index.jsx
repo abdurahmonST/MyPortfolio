@@ -20,16 +20,16 @@ const Navbar = () => {
         </p>
       </LogoWrapper>
       <NavbarSections>
-        <NavLink className="linkStyle" to="./home">
+        <NavLink className="linkStyle" to="/">
           Home
         </NavLink>
-        <NavLink className="linkStyle" to="./about">
+        <NavLink className="linkStyle" to="/about">
           About
         </NavLink>
-        <NavLink className="linkStyle" to="./projects">
+        <NavLink className="linkStyle" to="/projects">
           Projects
         </NavLink>
-        <NavLink className="linkStyle" to="./contact">
+        <NavLink className="linkStyle" to="/contact">
           Contact
         </NavLink>
         <NavbarAction>

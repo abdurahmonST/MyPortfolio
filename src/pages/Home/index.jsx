@@ -4,7 +4,10 @@ import { HomeWrapper } from "./homeStyles";
 const HomePage = () => {
   return (
     <HomeWrapper>
-      <h1>This is Home Page</h1>
+      <p>
+        Building Modern <br />
+        Web Experiences
+      </p>
     </HomeWrapper>
   );
 };
