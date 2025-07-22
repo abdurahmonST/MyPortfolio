@@ -1,3 +1,4 @@
+import FooterLayout from "../Footer";
 import Navbar from "../Navbar";
 import { MainWrapper } from "./mainStyle";
 
@@ -6,6 +7,7 @@ const MainLayout = (props) => {
     <MainWrapper>
       <Navbar />
       {props.children}
+      <FooterLayout />
     </MainWrapper>
   );
 };

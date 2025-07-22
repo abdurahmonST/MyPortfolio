@@ -9,7 +9,8 @@ export const HomeWrapper = styled.div`
         font-style: bold;
         font-weight: 900;
         font-size: 140px;
-        border: 4px solid #000000;
+        border: 2px solid #000000;
+        box-shadow: 7px 7px 0 rgba(0, 0, 0, 1);
         padding: 68px 57px;
         margin: 78px;
     }

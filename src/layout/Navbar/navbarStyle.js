@@ -23,18 +23,31 @@ export const NavbarSections = styled.div`
   align-items: center;
   gap: 38px;
   font-size: 28px;
+
   .linkStyle {
+    position: relative;
     text-decoration: none;
     color: #000000;
     font-weight: 100;
-    transition: all 0.2s ease-in-out;
+    transition: color 0.3s ease;
 
-    &:hover {
-      transform: translateY(-5px);
-      border-bottom: 1px solid #000000;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0%;
+      height: 1px;
+      background-color: #000000;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
     }
   }
 `;
+
 
 export const NavbarAction = styled.div`
     button {
