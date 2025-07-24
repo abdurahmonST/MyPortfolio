@@ -40,6 +40,14 @@ export const GlobalStyle = createGlobalStyle`
     font-style: inherit;
     font-display: swap;
   }
+
+  @font-face {
+    font-family: 'Outfit';
+    src: url('fonts/Outfit/static/Outfit-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: inherit;
+    font-display: swap;
+  }
 `;
 
  
