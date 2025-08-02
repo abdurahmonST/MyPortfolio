@@ -1,23 +1,15 @@
-import React from 'react'
-import { CTA1, CTA2, CTA3 } from './ButtonStyle'
+import React from "react";
+import { NormalButton } from "./Button.stlyles";
 
 const components = {
-  button: CTA1,
-  button2: CTA2,
-  button3: CTA3,
-}
+  normalButton: NormalButton,
+};
 
+const Button = ({ type = "normalButton", text, children, styles }) => {
+  const Component = components[type];
+  if (!Component) return null;
 
+  return <Component style={styles}>{text || children}</Component>;
+};
 
-const Button = ({ type = 'button', text, children }) => {
-  const Component = components[type]
-  if(!Component) return null
-  
-  return (
-    <Component>
-      { text || children}
-    </Component>
-  )
-}
-
-export default Button
+export default Button;

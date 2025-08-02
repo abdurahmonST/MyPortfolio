@@ -7,20 +7,20 @@ Outfit is a variable font with this axis:
   wght
 
 This means all the styles are contained in a single file:
-  Outfit-VariableFont_wght.ttf
+  Outfit/Outfit-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
 in those cases you can use the static font files for Outfit:
-  static/Outfit-Thin.ttf
-  static/Outfit-ExtraLight.ttf
-  static/Outfit-Light.ttf
-  static/Outfit-Regular.ttf
-  static/Outfit-Medium.ttf
-  static/Outfit-SemiBold.ttf
-  static/Outfit-Bold.ttf
-  static/Outfit-ExtraBold.ttf
-  static/Outfit-Black.ttf
+  Outfit/static/Outfit-Thin.ttf
+  Outfit/static/Outfit-ExtraLight.ttf
+  Outfit/static/Outfit-Light.ttf
+  Outfit/static/Outfit-Regular.ttf
+  Outfit/static/Outfit-Medium.ttf
+  Outfit/static/Outfit-SemiBold.ttf
+  Outfit/static/Outfit-Bold.ttf
+  Outfit/static/Outfit-ExtraBold.ttf
+  Outfit/static/Outfit-Black.ttf
 
 Get started
 -----------

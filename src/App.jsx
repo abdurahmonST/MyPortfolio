@@ -1,28 +1,19 @@
-import { Route, Routes } from "react-router";
-import { MainLayout } from "./layout";
-import { AboutPage, ContactPage, HomePage, ProjectsPage } from "./pages";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import React, { useState } from "react";
+import Badge from "./components/Badge";
+import NavDrawer from "./components/Drawer";
 
-function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // animatsiya davomiyligi (ms)
-      once: true, // faqat bir marta animatsiya bo'lsin
-    });
-  }, []);
+const App = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
-    <MainLayout>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
-    </MainLayout>
+    <div style={{ height: "2000px" }}>
+      <Badge
+        onClick={() => setIsDrawerOpen(!isDrawerOpen)}
+        isActive={isDrawerOpen}
+      />
+      <NavDrawer isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)} />
+    </div>
   );
-}
+};
 
 export default App;
