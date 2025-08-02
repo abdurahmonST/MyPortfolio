@@ -1,27 +1,27 @@
 @font-face {
   font-family: "LondrinaBlack";
-  src: url("Fonts/Londrina_Solid/LondrinaSolid-Black.ttf") format("truetype");
+  src: url("/fonts/Londrina_Solid/LondrinaSolid-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "OutfitThin";
-  src: url("Fonts/Outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+  src: url("/fonts/Outfit/Outfit-VariableFont_wght.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "OutfitLight";
-  src: url("Fonts/Outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+  src: url("/fonts/Outfit/Outfit-VariableFont_wght.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "OutfitExtraLight";
-  src: url("Fonts/Outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+  src: url("/fonts/Outfit/Outfit-VariableFont_wght.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
