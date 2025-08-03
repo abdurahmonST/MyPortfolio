@@ -3,12 +3,12 @@ import styled from "styled-components";
 
 export const BadgeWrapper = styled.div`
   position: fixed;
-  top: 40px;
-  left: 1380px;
+  top: 16px;
+  left: 1410px;
   width: 94px;
   height: 94px;
   background-color: ${({ $isActive }) => ($isActive ? "#f97316" : "#1e201e")};
-  color: #d9d9d9;
+  border: 1px solid #d9d9d9;
   display: flex;
   justify-content: center;
   align-items: center;

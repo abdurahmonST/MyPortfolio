@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import Badge from "./components/Badge";
-import NavDrawer from "./components/Drawer";
+import React from "react";
+import { Route, Routes } from "react-router";
+import { MainLayout } from "./layout";
+import { AboutPage, ContactPage, HomePage, ProjectsPage } from "./pages";
 
 const App = () => {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
   return (
-    <div style={{ height: "2000px" }}>
-      <Badge
-        onClick={() => setIsDrawerOpen(!isDrawerOpen)}
-        isActive={isDrawerOpen}
-      />
-      <NavDrawer isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)} />
-    </div>
+    <MainLayout>
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </MainLayout>
   );
 };
 

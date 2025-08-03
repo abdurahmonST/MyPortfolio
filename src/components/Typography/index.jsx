@@ -2,12 +2,14 @@ import React from "react";
 import {
   CardHeader,
   DrawerLink,
+  FooterText,
   InputText,
   LinkText,
   LogoText,
   PageHeader,
   ParagraphText,
   SectionHeader,
+  TitleText,
 } from "./Typography.style";
 
 const components = {
@@ -19,13 +21,20 @@ const components = {
   logoText: LogoText,
   inputText: InputText,
   drawerLink: DrawerLink,
+  footerText: FooterText,
+  titleText: TitleText,
 };
 
-const Typography = ({ type = "pageHeader", text, children, styles = null }) => {
+const Typography = ({
+  type = "pageHeader",
+  text,
+  children,
+  color = "#1e201e",
+}) => {
   const Component = components[type];
   if (!Component) return null;
 
-  return <Component style={styles}>{text || children}</Component>;
+  return <Component style={{ color: color }}>{text || children}</Component>;
 };
 
 export default Typography;

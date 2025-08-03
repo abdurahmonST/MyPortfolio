@@ -1,13 +1,14 @@
 import styled from "styled-components";
+import "../../styles/fonts.css";
 
 export const NormalButton = styled.button`
+  font-family: "OutfitThin";
   font-size: 40px;
-  font-weight: 100;
-  font-style: inherit;
   color: #f97316;
   border: 1px solid #f9731650;
   padding: 14px 32px;
-  background-color: #d9d9d9;
+  background-color: black;
+
   cursor: pointer;
   position: relative;
   z-index: 1;

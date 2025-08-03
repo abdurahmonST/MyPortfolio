@@ -9,12 +9,11 @@ export const Drawer = styled.div`
   left: 50%;
   transform: translateX(-50%)
     translateY(${(props) => (props.$isOpen ? "0" : "-100%")});
-  width: 1200px;
+  width: 1280px;
   height: 782px;
   background-color: #1e201e;
-  color: #d9d9d9;
   transition: transform 0.3s ease-in-out;
-  z-index: 1;
+  z-index: 2;
 `;
 
 export const MenuList = styled.ul`

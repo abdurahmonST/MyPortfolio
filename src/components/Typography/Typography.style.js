@@ -50,6 +50,18 @@ export const LogoText = styled.p`
   color: #1e201e;
 `;
 
+export const TitleText = styled.p`
+  font-family: "OutfitExtraLight", sans-serif;
+  font-size: 38px;
+  color: #1e201e;
+`;
+
+export const FooterText = styled.p`
+  font-family: "OutfitExtraLight", sans-serif;
+  font-size: 24px;
+  color: #1e201e;
+`;
+
 export const InputText = styled.p`
   font-family: "OutfitExtraLight", sans-serif;
   font-size: 36px;

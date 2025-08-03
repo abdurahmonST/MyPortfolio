@@ -27,11 +27,7 @@ const Badge = ({ onClick, isActive }) => {
       onClick={onClick}
       $isActive={isActive}
       style={{
-        opacity: scrollPosition > 300 ? 1 : 0,
-        transform: scrollPosition > 300 ? "translateY(0)" : "translateY(10px)",
-        hover: {
-          backgroundColor: isActive ? "#ffffff" : "#1e201e",
-        },
+        transform: scrollPosition > 200 ? "translateX(0)" : "translateX(120px)",
       }}
     >
       <img
