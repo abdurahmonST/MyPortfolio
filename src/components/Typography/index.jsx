@@ -30,11 +30,16 @@ const Typography = ({
   text,
   children,
   color = "#1e201e",
+  hoverBgColor,
 }) => {
   const Component = components[type];
   if (!Component) return null;
 
-  return <Component style={{ color: color }}>{text || children}</Component>;
+  return (
+    <Component style={{ color: color }} hoverBgColor={hoverBgColor}>
+      {text || children}
+    </Component>
+  );
 };
 
 export default Typography;

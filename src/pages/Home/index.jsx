@@ -13,6 +13,7 @@ import {
 } from "./Home.styles";
 import Typography from "../../components/Typography";
 import { Button } from "../../components";
+import { NavLink } from "react-router";
 
 const HomePage = () => {
   return (
@@ -22,12 +23,17 @@ const HomePage = () => {
         <HeaderImage>
           <BottomSection>
             <LeftSide>
-              <Button type="normalButton">Let's Talk</Button>
+              <NavLink to="/contact">
+                <Button type="normalButton" color="#1e201e">
+                  Let's Talk
+                </Button>
+              </NavLink>
             </LeftSide>
             <RightSide>
               <Typography type="titleText">Fullstack Developer</Typography>
             </RightSide>
           </BottomSection>
+          <img src="/Images/HeaderImage.jpg" alt="header image" />
         </HeaderImage>
       </HeaderSection>
       <ShortIntro>
@@ -39,9 +45,11 @@ const HomePage = () => {
         </LeftSide>
 
         <RightSide>
-          <Button>
-            More <br /> about me!
-          </Button>
+          <NavLink to="/about">
+            <Button color="#1e201e09">
+              More <br /> about me!
+            </Button>
+          </NavLink>
         </RightSide>
       </ShortIntro>
 
@@ -49,13 +57,19 @@ const HomePage = () => {
         <Typography type="sectionHeader">Favorite Projects</Typography>
         <SimpleCardWrapper>
           <LeftSide>
-            <SimpleCard></SimpleCard>
+            <SimpleCard>
+              <Typography type="linkText">ECOMMERCE PLATFORM</Typography>
+            </SimpleCard>
           </LeftSide>
           <RightSide>
-            <SimpleCard></SimpleCard>
+            <SimpleCard>
+              <Typography type="linkText">CODE MUSEUM</Typography>
+            </SimpleCard>
           </RightSide>
         </SimpleCardWrapper>
-        <Button>More Works</Button>
+        <NavLink to="/pojects">
+          <Button color="#1e201e09">More Works</Button>
+        </NavLink>
       </ProjectsSection>
     </HomeWrapper>
   );

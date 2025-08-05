@@ -15,8 +15,8 @@ export const BadgeWrapper = styled.div`
   font-size: 24px;
   cursor: pointer;
   transition: all 0.3s ease;
-  z-index: 2;
   overflow: hidden;
+  z-index: 6;
 
   &::before {
     content: "";

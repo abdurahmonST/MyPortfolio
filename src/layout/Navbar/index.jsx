@@ -14,13 +14,19 @@ const NavbarLayout = () => {
       </LogoWrapper>
       <LinkWrapper>
         <NavLink to="/about" style={{ textDecoration: "none" }}>
-          <Typography type="linkText">About</Typography>
+          <Typography type="linkText" hoverBgColor="#1e201e">
+            About
+          </Typography>
         </NavLink>
         <NavLink to="/projects" style={{ textDecoration: "none" }}>
-          <Typography type="linkText">Projects</Typography>
+          <Typography type="linkText" hoverBgColor="#1e201e">
+            Projects
+          </Typography>
         </NavLink>
         <NavLink to="/contact" style={{ textDecoration: "none" }}>
-          <Typography type="linkText">Contact</Typography>
+          <Typography type="linkText" hoverBgColor="#1e201e">
+            Contact
+          </Typography>
         </NavLink>
       </LinkWrapper>
     </NavbarWrapper>

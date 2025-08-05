@@ -16,22 +16,42 @@ const FooterLayout = () => {
         </Typography>
       </VerifiedWrapper>
       <SocialLinksWrapper>
-        <NavLink style={{ textDecoration: "none" }}>
+        <NavLink
+          to="https://www.linkedin.com/in/abdurahmon-bekmirzayev/"
+          style={{ textDecoration: "none" }}
+          target="_blank"
+          rel="noopener norefferer"
+        >
           <Typography type="linkText" color="#d9d9d9">
             Linkedin
           </Typography>
         </NavLink>
-        <NavLink style={{ textDecoration: "none" }}>
+        <NavLink
+          to="https://github.com/abdurahmonST"
+          style={{ textDecoration: "none" }}
+          target="_blank"
+          rel="noopener norefferer"
+        >
           <Typography type="linkText" color="#d9d9d9">
             Github
           </Typography>
         </NavLink>
-        <NavLink style={{ textDecoration: "none" }}>
+        <NavLink
+          to="https://x.com/Abdurahmon17384"
+          style={{ textDecoration: "none" }}
+          target="_blank"
+          rel="noopener norefferer"
+        >
           <Typography type="linkText" color="#d9d9d9">
             Twitter
           </Typography>
         </NavLink>
-        <NavLink style={{ textDecoration: "none" }}>
+        <NavLink
+          to="https://t.me/abdurahmon_developer"
+          style={{ textDecoration: "none" }}
+          target="_blank"
+          rel="noopener norefferer"
+        >
           <Typography type="linkText" color="#d9d9d9">
             Telegram
           </Typography>

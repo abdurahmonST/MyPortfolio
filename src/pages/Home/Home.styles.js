@@ -10,6 +10,17 @@ export const HeaderImage = styled.div`
   width: 1280px;
   height: 600px;
   background-color: #f9731650;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%; /* Rasmni to‘liq kenglikda joylashtirish */
+    height: 100%; /* Rasmni to‘liq balandlikda joylashtirish */
+    object-fit: cover; /* Rasmni o‘lchamlarga moslashtirib, to‘ldiradi */
+    position: absolute; /* Rasmni orqa fonda joylashtirish */
+    top: 0;
+    left: 0;
+  }
 `;
 
 export const BottomSection = styled.div`
@@ -17,6 +28,8 @@ export const BottomSection = styled.div`
   padding-top: 506px;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1;
 `;
 
 export const ShortIntro = styled.div`
@@ -52,14 +65,17 @@ export const SimpleCardWrapper = styled.div`
   padding: 56px 0;
   display: flex;
   justify-content: center;
-  gap: 190px;
+  gap: 80px;
   align-items: center;
 `;
 
 export const SimpleCard = styled.div`
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  width: 544px;
+  text-align: center;
+  width: 600px;
   height: 400px;
   background-color: #f9731650;
 `;

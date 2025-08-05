@@ -31,7 +31,7 @@ const CallToAction = () => {
           </NavLink>
         </LeftSide>
         <RightSide>
-          <NavLink>
+          <NavLink to="/contact">
             <Button>Get in Touch</Button>
           </NavLink>
         </RightSide>

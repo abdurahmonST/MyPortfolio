@@ -5,11 +5,21 @@ const components = {
   normalButton: NormalButton,
 };
 
-const Button = ({ type = "normalButton", text, children, styles }) => {
+const Button = ({
+  type = "normalButton",
+  text,
+  children,
+  styles,
+  color = "#d9d9d910",
+}) => {
   const Component = components[type];
   if (!Component) return null;
 
-  return <Component style={styles}>{text || children}</Component>;
+  return (
+    <Component style={{ backgroundColor: color, styles }}>
+      {text || children}
+    </Component>
+  );
 };
 
 export default Button;

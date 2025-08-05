@@ -5,15 +5,15 @@ export const NormalButton = styled.button`
   font-family: "OutfitThin";
   font-size: 40px;
   color: #f97316;
-  border: 1px solid #f9731650;
+  border: 1px solid #f97316;
+  border: none;
   padding: 14px 32px;
-  background-color: black;
+  background-color: #d9d9d910;
 
   cursor: pointer;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  background: transparent;
 
   &::before {
     content: "";
