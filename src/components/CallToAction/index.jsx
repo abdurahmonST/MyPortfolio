@@ -16,7 +16,9 @@ const CallToAction = () => {
       <Typography type="sectionHeader" color="#d9d9d9">
         Let's work together
       </Typography>
-      <ImageWrapper></ImageWrapper>
+      <ImageWrapper src="/Images/CallToAction.jpg" alt="CTA photo" />
+      {/* <img src="/Images/CallToAction.jpg" alt="CTA photo" /> */}
+      {/* </ImageWrapper> */}
       <BottomSection>
         <LeftSide>
           <NavLink style={{ textDecoration: "none" }}>

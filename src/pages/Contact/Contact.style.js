@@ -36,7 +36,7 @@ export const RightSide = styled.div`
 `;
 
 export const TextSection = styled.div`
-  margin-top: 100px;
+  margin-top: 200px;
   margin-bottom: 50px;
   margin-left: 66px;
 `;

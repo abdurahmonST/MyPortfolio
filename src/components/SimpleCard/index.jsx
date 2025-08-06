@@ -5,41 +5,37 @@ import {
   useSpring,
   AnimatePresence,
 } from "framer-motion";
-import {
-  Card,
-  Image,
-  TextStyle,
-  TextWrapper,
-  BubbleWrapper,
-} from "./ProjectCard.style";
+import { SimpleCard, BubbleWrapper, Image } from "./simpleCard.styles";
 import Typography from "../Typography";
+import { NavLink } from "react-router";
 
-const ProjectCard = ({ image, title, role, date }) => {
+const SimpleCardComponent = ({ name, image }) => {
   const [hovered, setHovered] = useState(false);
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-  const springX = useSpring(x, { stiffness: 200, damping: 30 });
-  const springY = useSpring(y, { stiffness: 200, damping: 30 });
+  const springX = useSpring(x, { stiffness: 200, damping: 40 });
+  const springY = useSpring(y, { stiffness: 200, damping: 40 });
 
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
-    const width = 130;
-    const height = 130;
-    x.set(e.clientX - rect.left - width / 2);
-    y.set(e.clientY - rect.top - height / 2);
+    const bubbleWidth = 130; // Adjust based on BubbleWrapper width
+    const bubbleHeight = 130; // Adjust based on BubbleWrapper height
+    x.set(e.clientX - rect.left - bubbleWidth / 2);
+    y.set(e.clientY - rect.top - bubbleHeight / 2);
   };
 
   const handleClick = () => {
-    alert("Real Demo clicked!");
+    console.log(`Navigating to project: ${name}`);
   };
 
   return (
-    <Card
+    <SimpleCard
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
+      {image && <Image src={image} alt={`${name} Photo`} />}
       <AnimatePresence>
         {hovered && (
           <BubbleWrapper
@@ -58,22 +54,15 @@ const ProjectCard = ({ image, title, role, date }) => {
             onClick={handleClick}
             style={{ left: springX, top: springY }}
           >
-            <Typography type="cardHeader">Real Demo</Typography>
+            <NavLink to="/projects" style={{ textDecoration: "none" }}>
+              <Typography type="cardHeader">Let's See</Typography>
+            </NavLink>
           </BubbleWrapper>
         )}
       </AnimatePresence>
-
-      {image && <Image src={image} alt={`${title} Photo`} />}
-
-      <TextStyle>
-        <Typography type="cardHeader">{title}</Typography>
-        <TextWrapper>
-          <Typography type="linkText">{role}</Typography>
-          <Typography type="linkText">{date}</Typography>
-        </TextWrapper>
-      </TextStyle>
-    </Card>
+      <Typography type="logoText">{name}</Typography>
+    </SimpleCard>
   );
 };
 
-export default ProjectCard;
+export default SimpleCardComponent;

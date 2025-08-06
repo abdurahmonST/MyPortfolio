@@ -1,7 +1,6 @@
 import React from "react";
 import {
   AboutWrapper,
-  AnimationSection,
   HeaderWrapper,
   ImageWrapper,
   LeftSide,
@@ -9,7 +8,7 @@ import {
   SectionFiller,
   SectionWrapper,
 } from "./About.style";
-import { Typography } from "../../components";
+import { MarqueeText, Typography } from "../../components";
 
 const AboutPage = () => {
   return (
@@ -17,7 +16,7 @@ const AboutPage = () => {
       <HeaderWrapper>
         <LeftSide>
           <Typography>ABOUT ME</Typography>
-          <ImageWrapper></ImageWrapper>
+          <ImageWrapper src="/Images/About.jpg"></ImageWrapper>
         </LeftSide>
         <RightSide>
           <Typography type="paragraphText">
@@ -30,9 +29,7 @@ const AboutPage = () => {
           </Typography>
         </RightSide>
       </HeaderWrapper>
-      <AnimationSection>
-        <Typography color="#d9d9d9">IS MY WEBSITE INTERESTING?</Typography>
-      </AnimationSection>
+      <MarqueeText text="About me • Fullstack Developer • Designer • Creator •" />
       <SectionWrapper>
         <LeftSide>
           <SectionFiller />

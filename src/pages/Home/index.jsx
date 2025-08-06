@@ -8,12 +8,12 @@ import {
   ProjectsSection,
   RightSide,
   ShortIntro,
-  SimpleCard,
   SimpleCardWrapper,
 } from "./Home.styles";
 import Typography from "../../components/Typography";
 import { Button } from "../../components";
 import { NavLink } from "react-router";
+import SimpleCardComponent from "../../components/SimpleCard";
 
 const HomePage = () => {
   return (
@@ -57,14 +57,16 @@ const HomePage = () => {
         <Typography type="sectionHeader">Favorite Projects</Typography>
         <SimpleCardWrapper>
           <LeftSide>
-            <SimpleCard>
-              <Typography type="linkText">ECOMMERCE PLATFORM</Typography>
-            </SimpleCard>
+            <SimpleCardComponent
+              name="Code Museum"
+              image="Images/ProjectOne.jpg"
+            />
           </LeftSide>
           <RightSide>
-            <SimpleCard>
-              <Typography type="linkText">CODE MUSEUM</Typography>
-            </SimpleCard>
+            <SimpleCardComponent
+              name="Ecommerce Website"
+              image="Images/ProjectTwo.jpg"
+            />
           </RightSide>
         </SimpleCardWrapper>
         <NavLink to="/pojects">

@@ -30,10 +30,18 @@ const Badge = ({ onClick, isActive }) => {
         transform: scrollPosition > 200 ? "translateX(0)" : "translateX(120px)",
       }}
     >
-      <img
-        src={isActive ? "/Icons/CloseNavLinks.svg" : "/Icons/ShowNavLinks.svg"}
-        alt="Badge Icon"
-      />
+      <div className="icon-container">
+        <img
+          className={`icon ${isActive ? "icon-hidden" : "icon-visible"}`}
+          src="/Icons/ShowNavLinks.svg"
+          alt="Show Nav Icon"
+        />
+        <img
+          className={`icon ${isActive ? "icon-visible" : "icon-hidden"}`}
+          src="/Icons/CloseNavLinks.svg"
+          alt="Close Nav Icon"
+        />
+      </div>
     </BadgeWrapper>
   );
 };

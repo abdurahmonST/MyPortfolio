@@ -6,4 +6,6 @@ export { default as Badge } from "./Badge";
 export { default as CallToAction } from "./CallToAction";
 export { default as Input } from "./Input";
 export { default as BlackNavbar } from "./BlackNavbar";
+export { default as SimpleCard } from "./SimpleCard";
+export { default as MarqueeText } from "./AnimationSection";
 // export { default as ScrolToTop } from "./ScrollToTop";

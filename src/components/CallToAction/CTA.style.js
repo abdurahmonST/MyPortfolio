@@ -9,11 +9,14 @@ export const CTAWrapper = styled.div`
   padding: 70px;
 `;
 
-export const ImageWrapper = styled.div`
+export const ImageWrapper = styled.img`
   width: 790px;
-  height: 280px;
+  height: 320px;
   background-color: aliceblue;
+  background-position: center;
+  object-fit: cover;
   margin: 30px auto;
+  opacity: 0.9;
 `;
 
 export const BottomSection = styled.div`

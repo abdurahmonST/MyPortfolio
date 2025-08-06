@@ -1,11 +1,15 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const Card = styled.div`
+export const SimpleCard = styled.div`
   position: relative;
-  width: 610px;
-  height: 612px;
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  width: 600px;
+  height: 400px;
   background-color: #fbfffe50;
   overflow: hidden;
   cursor: pointer;
@@ -18,12 +22,12 @@ export const BubbleWrapper = styled(motion.div)`
   background-color: #f97316;
   border-radius: 50%;
   padding: 10px;
-  transform: translate(-50%, -50%);
+  transform: translate(-10%, -10%);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  pointer-events: auto; /* allow click */
+  pointer-events: auto;
   color: white;
   font-weight: 600;
   font-size: 14px;
@@ -32,19 +36,7 @@ export const BubbleWrapper = styled(motion.div)`
 `;
 
 export const Image = styled.img`
-  width: 610px;
-  height: 500px;
+  width: 600px;
+  height: 400px;
   object-fit: cover;
-`;
-
-export const TextStyle = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 4px 8px;
-`;
-
-export const TextWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-top: 26px;
 `;

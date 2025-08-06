@@ -14,10 +14,10 @@ export const HeaderImage = styled.div`
   overflow: hidden;
 
   img {
-    width: 100%; /* Rasmni to‘liq kenglikda joylashtirish */
-    height: 100%; /* Rasmni to‘liq balandlikda joylashtirish */
-    object-fit: cover; /* Rasmni o‘lchamlarga moslashtirib, to‘ldiradi */
-    position: absolute; /* Rasmni orqa fonda joylashtirish */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
     top: 0;
     left: 0;
   }
@@ -67,15 +67,4 @@ export const SimpleCardWrapper = styled.div`
   justify-content: center;
   gap: 80px;
   align-items: center;
-`;
-
-export const SimpleCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  text-align: center;
-  width: 600px;
-  height: 400px;
-  background-color: #f9731650;
 `;

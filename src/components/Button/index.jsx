@@ -9,14 +9,14 @@ const Button = ({
   type = "normalButton",
   text,
   children,
-  styles,
+  styles = {},
   color = "#d9d9d910",
 }) => {
   const Component = components[type];
   if (!Component) return null;
 
   return (
-    <Component style={{ backgroundColor: color, styles }}>
+    <Component style={{ ...styles, backgroundColor: color }}>
       {text || children}
     </Component>
   );

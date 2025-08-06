@@ -12,7 +12,7 @@ export const HeaderWrapper = styled.div`
   width: 100%;
 `;
 
-export const ImageWrapper = styled.div`
+export const ImageWrapper = styled.img`
   width: 450px;
   height: 310px;
   background-color: aliceblue;
@@ -44,12 +44,4 @@ export const SectionWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin: 50px 0;
-`;
-
-export const AnimationSection = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1400px;
-  background-color: #1e201e;
 `;

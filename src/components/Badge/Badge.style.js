@@ -4,7 +4,8 @@ import styled from "styled-components";
 export const BadgeWrapper = styled.div`
   position: fixed;
   top: 16px;
-  left: 1410px;
+  right: 20px;
+  /* left: 1410px; */
   width: 94px;
   height: 94px;
   background-color: ${({ $isActive }) => ($isActive ? "#f97316" : "#1e201e")};
@@ -32,5 +33,28 @@ export const BadgeWrapper = styled.div`
 
   &:hover::before {
     bottom: 0;
+  }
+
+  .icon-container {
+    position: relative;
+    width: 70%;
+    height: 70%;
+  }
+
+  .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .icon-visible {
+    transform: translateY(0);
+  }
+
+  .icon-hidden {
+    transform: translateY(${(props) => (props.$isActive ? "-100%" : "100%")});
   }
 `;
