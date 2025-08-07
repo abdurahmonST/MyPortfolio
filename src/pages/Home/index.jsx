@@ -59,13 +59,13 @@ const HomePage = () => {
           <LeftSide>
             <SimpleCardComponent
               name="Code Museum"
-              image="Images/ProjectOne.jpg"
+              image="Images/CodeMuseum.png"
             />
           </LeftSide>
           <RightSide>
             <SimpleCardComponent
-              name="Ecommerce Website"
-              image="Images/ProjectTwo.jpg"
+              name="Furniture Store"
+              image="Images/FurnitureWebsite.png"
             />
           </RightSide>
         </SimpleCardWrapper>

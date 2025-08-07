@@ -13,8 +13,9 @@ import {
   BubbleWrapper,
 } from "./ProjectCard.style";
 import Typography from "../Typography";
+import { NavLink } from "react-router";
 
-const ProjectCard = ({ image, title, role, date }) => {
+const ProjectCard = ({ image, title, role, date, linkName }) => {
   const [hovered, setHovered] = useState(false);
 
   const x = useMotionValue(0);
@@ -28,10 +29,6 @@ const ProjectCard = ({ image, title, role, date }) => {
     const height = 130;
     x.set(e.clientX - rect.left - width / 2);
     y.set(e.clientY - rect.top - height / 2);
-  };
-
-  const handleClick = () => {
-    alert("Real Demo clicked!");
   };
 
   return (
@@ -55,10 +52,15 @@ const ProjectCard = ({ image, title, role, date }) => {
                 ease: "easeInOut",
               },
             }}
-            onClick={handleClick}
             style={{ left: springX, top: springY }}
           >
-            <Typography type="cardHeader">Real Demo</Typography>
+            <NavLink
+              to={linkName}
+              style={{ textDecoration: "none" }}
+              target="_blank"
+            >
+              <Typography type="cardHeader">Real Demo</Typography>
+            </NavLink>
           </BubbleWrapper>
         )}
       </AnimatePresence>

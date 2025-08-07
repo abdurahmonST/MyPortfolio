@@ -34,7 +34,8 @@ export const BubbleWrapper = styled(motion.div)`
 export const Image = styled.img`
   width: 610px;
   height: 500px;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: #1e201e50;
 `;
 
 export const TextStyle = styled.div`

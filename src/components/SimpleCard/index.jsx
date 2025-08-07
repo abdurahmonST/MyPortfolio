@@ -55,7 +55,7 @@ const SimpleCardComponent = ({ name, image }) => {
             style={{ left: springX, top: springY }}
           >
             <NavLink to="/projects" style={{ textDecoration: "none" }}>
-              <Typography type="cardHeader">Let's See</Typography>
+              <Typography type="cardHeader">Show More</Typography>
             </NavLink>
           </BubbleWrapper>
         )}

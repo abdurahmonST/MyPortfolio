@@ -16,7 +16,7 @@ const AboutPage = () => {
       <HeaderWrapper>
         <LeftSide>
           <Typography>ABOUT ME</Typography>
-          <ImageWrapper src="/Images/About.jpg"></ImageWrapper>
+          <ImageWrapper src="/Images/AboutImage.jpg"></ImageWrapper>
         </LeftSide>
         <RightSide>
           <Typography type="paragraphText">
@@ -29,7 +29,7 @@ const AboutPage = () => {
           </Typography>
         </RightSide>
       </HeaderWrapper>
-      <MarqueeText text="About me • Fullstack Developer • Designer • Creator •" />
+      <MarqueeText text="About me • Fullstack Developer • Creative Person •" />
       <SectionWrapper>
         <LeftSide>
           <SectionFiller />

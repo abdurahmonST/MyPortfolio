@@ -16,6 +16,7 @@ export const ImageWrapper = styled.img`
   width: 450px;
   height: 310px;
   background-color: aliceblue;
+  object-fit: cover;
 `;
 
 export const LeftSide = styled.div`

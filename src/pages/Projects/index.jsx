@@ -21,7 +21,7 @@ const ProjectsPage = () => {
         </LeftSide>
       </HeaderWrapper>
       <ProjectCardsWrapper>
-        <ProjectCard
+        {/* <ProjectCard
           image="Images/ProjectOne.jpg"
           title="Ecommerce Platform"
           role="Fullstack Development"
@@ -32,18 +32,20 @@ const ProjectsPage = () => {
           title="Furniture Website"
           role="Frontend Development"
           date="July, 2025"
-        ></ProjectCard>
+        ></ProjectCard> */}
         <ProjectCard
-          image="Images/ProjectThree.jpg"
-          title="Task Manager"
-          role="Fullstack Development"
+          image="Images/FurnitureWebsite.png"
+          title="Furtniture Store"
+          role="Frontend Development"
           date="March, 2025"
+          linkName={"https://furniture-project-five.vercel.app/"}
         ></ProjectCard>
         <ProjectCard
-          image="Images/ProjectFour.jpg"
+          image="Images/CodeMuseum.png"
           title="Code Museum"
           role="Backend Development"
           date="August, 2025"
+          linkName={"https://code-musuem.vercel.app"}
         ></ProjectCard>
       </ProjectCardsWrapper>
     </ProjectsWrapper>
